@@ -56,4 +56,9 @@ obj/
 LastCoverageResults.log
 
 # graphify output directory
-graphify-out/
+graphify-out/build/
+
+# CMake build directories (HarmonyOS port)
+cmake-build-*/
+cmake-build-debug/
+cmake-build-release/

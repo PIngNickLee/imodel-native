@@ -81,6 +81,19 @@
 
 #elif defined (__EMSCRIPTEN__)
 
+#elif defined (BENTLEY_HARMONYOS)
+    // ============================================================
+    //  HarmonyOS (鸿蒙) 平台配置
+    //  基于 Linux/Android 的 POSIX 兼容层
+    // ============================================================
+    #define BENTLEYCONFIG_OS_HARMONYOS
+    #define BENTLEYCONFIG_OS_UNIX
+    #define BENTLEYCONFIG_GRAPHICS_OPENGLES
+    #define BENTLEYCONFIG_GRAPHICS_OPENGL
+    #define BENTLEYCONFIG_DISPLAY_HARMONYOS
+    #define BENTLEYCONFIG_GETENV
+    #define BENTLEYCONFIG_64BIT_HARDWARE
+
 #else
     #error Unexpected OS configuration
 #endif
